@@ -1,0 +1,112 @@
+*{
+    font-family: 'Jura', sans-serif;
+    
+}
+
+:root{
+    --lightblue: #2B9DF4;
+}
+
+body{
+    background-color: black;
+}
+
+.font-title{
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* HEADER */
+
+.bg-img-custom{
+    background: linear-gradient(to right ,rgb(0, 0, 0), rgb(0,0,0,0.4)), url(./media/moon.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-position-custom{
+    position: absolute;
+    top: 40%;
+}
+.fs-h1-custom{
+    font-size: 50px;
+}
+
+.fs-p-custom{
+    font-size: 18px;
+}
+
+.button-custom{
+    background-color: transparent;
+    color: var(--lightblue);
+    border: 0;
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    font-size: 20px;
+}
+
+.bb-custom{
+    border-bottom: 1px solid var(--lightblue);
+}
+
+/* MAIN */
+
+h3, .icon-color-custom{
+    color: var(--lightblue);
+}
+
+.bt-custom{
+    border-top: 1px  var(--lightblue);
+}
+
+/* FOOTER */
+
+.bg-img-footer{
+    background-image: url(./media/sunrise-1765027_1920.jpg);
+    background-size: cover;
+    background-position: center;
+    /* border-bottom: 1px solid var(--lightblue); */
+}
+
+.bb-footer-custom{
+    border-bottom: 1px solid var(--lightblue);
+    width: 300px;
+    height: 40px;
+}
+
+
+/* CSS */
+.button-48 {
+  
+  background-color: transparent;
+  border: 1px solid var(--lightblue);
+  box-sizing: border-box;
+  color: white;
+  font-size: 14px;
+  padding: 10px 35px;
+  position: absolute;
+  right: 12px;
+}
+
+.button-48:before {
+  animation: opacityFallbackOut .5s step-end forwards;
+  backface-visibility: hidden;
+  background-color: #EBEBEB;
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+  width: 100%;
+}
+
+.button-48:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+
+
+
